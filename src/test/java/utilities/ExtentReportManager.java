@@ -98,15 +98,14 @@ public class ExtentReportManager implements ITestListener {
 	public void onFinish(ITestContext testContext) {
 		
 		extent.flush();
-		
-		String pathOfExtentReport = System.getProperty("user.dir")+"\\reports\\"+repName;
-		File extentReport = new File(pathOfExtentReport);
-		
-		try {
-			Desktop.getDesktop().browse(extentReport.toURI());
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		/*
+		 * String pathOfExtentReport =
+		 * System.getProperty("user.dir")+"\\reports\\"+repName; File extentReport = new
+		 * File(pathOfExtentReport);
+		 * 
+		 * try { Desktop.getDesktop().browse(extentReport.toURI()); } catch (IOException
+		 * e) { e.printStackTrace(); }
+		 */
 
 		
 		/*  try {
